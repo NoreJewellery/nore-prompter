@@ -370,6 +370,19 @@ Until then, **drop "it is the only stone in the gallery"** whenever bridge stone
 - Top view: **remove** `extra-bridgeStones`. The bridge is mostly hidden from above; just make
   sure `band` and `nothing-extra` fail any stones on the shoulders.
 
+## Addendum v1.4 (2026-11-10, after run 22, owner-confirmed): bridge line SUPERSEDED
+
+The v1.3 `{BRIDGE_STONES_LINE}` above is SUPERSEDED. Its "just below the stone's edge (girdle)"
+produced a hidden halo on 1 of 3 rings (Wins & Flops #2). Use Freddie's corrected line, which is
+in the code now:
+
+```text
+a single row of small round {ACCENT_STONE} stones set into the bridge: the curved metal bar under the head that joins the two sides of the setting, lower down below the base of the prongs, seen from the side as a shallow arch between the shoulders; it is NOT a ring of stones hugging the underside of the centre stone (that would be a hidden halo). Only the bridge has these stones: the shoulders, cathedral arches and band stay exactly as described above.
+```
+
+The second sentence is Peter's v1.3 tail, kept from v1.3. Freddie: drop it if your line
+already covers the shoulders.
+
 ## How to test it (suggested; spend needs the owner's approval)
 
 - Re-run the 3 bridge-stone rings and the two-tone pear and marquise with v1 (option A, and
