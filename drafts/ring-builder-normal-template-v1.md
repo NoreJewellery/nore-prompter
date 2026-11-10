@@ -288,7 +288,8 @@ bridge stones option A failed 0 of 3 (stones down the shoulders, 6 of 6 over two
 two-tone marquise 4-prong got 6 prongs (3 of 3); two-tone pear went 1 of 1 per variant, with
 unrelated fails.
 
-1. **Two-step edit for these two extras (strongest idea, based on Freddie's own evidence).**
+1. **WITHDRAWN in v1.3 (the owner wants one-shot renders).** Two-step edit for these two
+   extras.
    Render the ring without the extra first, using the proven path that passes. Then edit that
    approved picture with "change only X". Freddie's notes say a picture plus "change only X"
    holds a design far better than words, and that "add a stone" edits held.
@@ -311,6 +312,63 @@ unrelated fails.
    Owner and CAD must confirm that's the product.
 4. **Sample size:** one try per variant can't separate pear variant A from B, and the grey
    background and east-west turn don't look like prong effects. Re-run before choosing.
+
+## Addendum v1.3 (2026-11-10): the bridge is the rail under the head
+
+Owner's direction (relayed by Freddie): the bridge is the curved metal rail directly under the
+centre stone that joins the prongs, seen from the side (marked in red on
+`nore-freddie/drafts/owner-bridge-marked.png`). It is not the cathedral arches or the shoulders.
+The owner also wants the fewest renders possible: one-shot Gemini calls, so **idea 1 in v1.2
+(the two-step edit) is WITHDRAWN.** Option B (shoulders) is dropped, and option A is redefined
+below.
+
+### Corrected `{BRIDGE_STONES_LINE}` (for the Stones list)
+
+```text
+a single row of small round {ACCENT_STONE} stones set into the bridge: the narrow curved metal rail directly under the centre stone that joins the prongs together just below the stone's edge (girdle). There is a bridge on each of the two side profiles of the head (the sides you see when you look at the ring from the side, with the band running left and right), and each one holds its row of stones, facing outward, visible from the side. Only the bridge has these stones: the shoulders, cathedral arches and band stay exactly as described above.
+```
+
+### Prompt changes that go with it
+
+1. **Never use "bridge" for the cathedral choice in the prompt.** Today's line `Bridge: cathedral
+   bridge: ...` uses the same word for the arches, which is exactly what sent Gemini to the
+   shoulders. Change it to `Shoulders: cathedral: on each side the band itself sweeps up in one
+   smooth, solid arch...`. The customer-facing label can stay; only the prompt wording changes.
+   Freddie, please also check the catalogue/UI: if the builder's "Bridge" choice means the shank
+   style, that's a naming clash for the owner to settle.
+2. **Band line with bridge stones:** "...with no stones set in the band itself or on the
+   shoulders (the only small stones are in the bridge under the head)."
+3. **Avoid line [IF BRIDGE STONES]:** "- stones on the shoulders, cathedral arches or band: the
+   small stones sit only in the bridge rail under the centre stone."
+4. **Top view:** add to the bridge-stones item "...from this angle the centre stone mostly
+   covers the bridge; do not move the stones onto the shoulders to make them visible."
+5. **The Cathedral-only gate came from the old meaning.** An under-head rail exists on most
+   prong heads, so whether the extra stays Cathedral-only is now an owner question.
+
+### Clash with the birthstone (owner decision needed)
+
+Today's birthstone line puts it "in the gallery directly under the centre stone, visible from
+the side; the only stone in the gallery". That is the same place as the bridge stones, so a ring
+with both extras (like design 10) contradicts itself. Options for the owner:
+- (a) The birthstone sits at the centre of the bridge row on the side facing the camera, and the
+  bridge stones flank it. The birthstone line becomes "one small round {BIRTHSTONE} at the centre
+  of the bridge row on one side, the same size as the bridge stones".
+- (b) The birthstone moves elsewhere (e.g. set inside the band, or on the far profile).
+  Placement is for the owner and CAD.
+Until then, **drop "it is the only stone in the gallery"** whenever bridge stones are also chosen.
+
+### Check questions
+
+- `extra-bridgeStones` (3/4 view): "Look at the side of the head under the centre stone. Is
+  there a row of small {ACCENT_STONE} stones set into the curved metal rail (bridge) directly
+  under the centre stone, between the prongs, while the shoulders, cathedral arches and band
+  have no small stones? A bridge hidden by the camera angle does not count against it."
+- `band` with bridge stones: "...Is the band one plain polished strip with no stones in it or on
+  the shoulders? Small stones in the rail directly under the centre stone are requested and do
+  not count."
+- `nothing-extra`: the stone list already names the bridge stones, so no change.
+- Top view: **remove** `extra-bridgeStones`. The bridge is mostly hidden from above; just make
+  sure `band` and `nothing-extra` fail any stones on the shoulders.
 
 ## How to test it (suggested; spend needs the owner's approval)
 
