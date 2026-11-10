@@ -281,6 +281,37 @@ an owner question), and `{STONE_ORIGIN}` becomes a test variable, not a default.
    bare-spot sentence to the matching check, e.g. pear 5: "...and is the rounded end free of
    any prong?"; marquise 4: "...and does each long side have only one prong?"
 
+## Addendum v1.2 (2026-11-10, after run 21, owner verdict pending): ideas, not tested
+
+Run 21 as reported by Freddie (not owner-confirmed, so not logged): basic rings passed 2 of 2;
+bridge stones option A failed 0 of 3 (stones down the shoulders, 6 of 6 over two prompts);
+two-tone marquise 4-prong got 6 prongs (3 of 3); two-tone pear went 1 of 1 per variant, with
+unrelated fails.
+
+1. **Two-step edit for these two extras (strongest idea, based on Freddie's own evidence).**
+   Render the ring without the extra first, using the proven path that passes. Then edit that
+   approved picture with "change only X". Freddie's notes say a picture plus "change only X"
+   holds a design far better than words, and that "add a stone" edits held.
+   - Two-tone: "Change only the colour of the prongs holding the centre stone to bright white
+     gold. Keep every prong exactly where it is; add none and remove none. Change nothing else."
+   - Bridge stones (A): "Add a single row of small round {ACCENT_STONE} stones along [ARCH
+     PLACEMENT] only. The band and shoulders stay exactly as they are, plain polished metal.
+     Change nothing else."
+   - Cost: one extra image call per view, inside or over the $1 cap. That needs the owner's
+     approval.
+2. **Bridge stones: say where on the arch, in profile terms.** "Along the top of each arch" looks
+   the same as the shoulders from most angles. If the product means stones on the side face of
+   the bridge (seen in profile under the head), say: "set into the outer side face of each
+   cathedral arch, visible from the side; seen from above, the band and shoulders show only
+   plain polished metal." Then the top-view check expects no stones from above. This is a
+   product question for the owner and CAD, not just a wording choice.
+3. **Two-tone as a white-gold head.** Real two-tone rings usually have a white-gold head
+   (basket and prongs) on a coloured band. Saying "the head, meaning the basket and its
+   {PRONG_COUNT} prongs, is white gold" may fit Gemini's defaults better than prongs alone.
+   Owner and CAD must confirm that's the product.
+4. **Sample size:** one try per variant can't separate pear variant A from B, and the grey
+   background and east-west turn don't look like prong effects. Re-run before choosing.
+
 ## How to test it (suggested; spend needs the owner's approval)
 
 - Re-run the 3 bridge-stone rings and the two-tone pear and marquise with v1 (option A, and
