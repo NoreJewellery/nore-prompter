@@ -253,6 +253,34 @@ Avoid:
 
 (About 560 words, against 1,148 today. Fill the top view the same way from Part 1b.)
 
+## Addendum v1.1 (2026-11-10, after Freddie's reply): prong wording
+
+Facts from Freddie: in run 20 the two-tone pear (5-prong) got a 6th claw at the rounded end, and
+the two-tone marquise (4-prong) got 6, which is the 6-prong marquise layout. The flags are
+settled: the label is an HTML badge plus email and alt text (whether to burn it into the image is
+an owner question), and `{STONE_ORIGIN}` becomes a test variable, not a default.
+
+1. **Use one word, "prongs", everywhere.** The two-tone line and its check say "claws" while the
+   layout says "prongs". Gemini may read "white gold claws" as extra parts. In Part 1a, 1b and
+   Part 3, replace "claws" with "prongs" in the two-tone Metal line, its avoid line and the
+   `extra-twoToneClaws` check (the check's id can stay).
+2. **Say where the prongs aren't, as well as where they are.** That targets the exact spot where
+   Gemini added prongs:
+   - Pear, 5-prong: "exactly 5 prongs: one V-shaped prong covering the pointed tip, and two
+     single prongs along each long side, evenly spaced. The rounded end has no prong: it is held
+     by the two side prongs nearest it. No other prongs anywhere."
+   - Marquise, 4-prong: "exactly 4 prongs: one at each pointed end, and only one on each long
+     side, at its widest point. The long sides have no other prongs."
+   - Marquise, 6-prong and pear, 4-prong: keep as they are. Run 20 gives no evidence against
+     them.
+3. **Optional test variant B for two-tone:** put the count back in the Metal line once, as
+   "...the prongs holding the centre stone, all {PRONG_COUNT} of them, are bright white gold...".
+   That repeats the count, so test it against the v1 wording on the same two rings and keep the
+   one that passes.
+4. **Checks:** keep the `basket` positions as they are (the V counts as one of the 5). Add the
+   bare-spot sentence to the matching check, e.g. pear 5: "...and is the rounded end free of
+   any prong?"; marquise 4: "...and does each long side have only one prong?"
+
 ## How to test it (suggested; spend needs the owner's approval)
 
 - Re-run the 3 bridge-stone rings and the two-tone pear and marquise with v1 (option A, and
