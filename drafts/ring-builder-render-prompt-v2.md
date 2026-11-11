@@ -76,6 +76,7 @@
 | Rail thickness | Thicker than a prong |
 | Rail/Gallery | Plain metal. Diamond Gallery has the diamonds, low in the gallery |
 | Is the Rail/Gallery rail the bridge? | No, two parts. **The owner will send a marked photo** |
+| Stone size in the render | Keep one size (the guide picture's size; the carat is shown as text) |
 
 ## 3. The method
 
@@ -105,15 +106,17 @@ complex ring.
 
 **Two risks Freddie raised (Nov 11). Both are untested and both are in the test plan.**
 
-1. **Stone size.** The tiles show about 1 ct and customers choose 1 to 10 ct. "Keep the head
-   exactly as in the photo" fights a much bigger stone. Fiorella avoided this by always rendering
-   at one standard size (owner, Nov 10). Two ways to handle it, for the owner to choose:
-   - (a) Render every ring at the guide picture's stone size and show the chosen carat as text,
-     as Fiorella does.
-   - (b) Let the stone grow, with this extra Changes line (new wording, untested): "The centre
-     stone is larger than in the photo: {CARAT_PROMPT}. The head and its prongs are scaled up in
-     proportion to hold it. The band keeps the width it has in the photo." If large sizes still
-     redraw the ring, add one guide picture per size range.
+1. **Stone size: DECIDED, "Keep one size" (owner, Nov 11).** The tiles show about 1 ct and
+   customers choose 1 to 10 ct. "Keep the head exactly as in the photo" fights a much bigger
+   stone. So every v2 render keeps the guide picture's stone size, as Fiorella does, and the
+   carat is not sent to Gemini.
+   - The Centre stone line says "at the SAME SIZE as the stone in the photo" (Fiorella's proven
+     words). `{CARAT_PROMPT}` is not used in prompts 4a and 4b.
+   - The chosen carat stays on the Spec Sheet, the result screen, the emails and the owner alert.
+   - `[OWNER + FREDDIE]` the customer should be told the picture shows a standard stone size.
+     Fiorella has a note for this; the wording for the normal rings is the owner's to approve.
+   - The checker asks nothing about stone size.
+   - Not chosen: letting the stone grow with the carat.
 2. **Metal.** Fiorella needed its own approved picture per metal. Whether one white-metal tile
    recolours cleanly to yellow or rose is not known. Test it on the first rings; if it fails,
    each look needs one picture per metal colour.
@@ -133,7 +136,7 @@ Camera: {VIEWS.front}. Keep exactly the camera, framing, lighting and background
 The attached image is NORE's approved photo of this ring style, the {LOOK_NAME}, in {REF_METAL} with {REF_SHAPE_A_AN} centre diamond, seen from the same 3/4 camera angle as this render. This is an EDIT of that photo, not a new design: change ONLY what is listed under "Changes" below, and keep every other part of the ring exactly as it is.
 Changes:
 [IF METAL DIFFERS]- Metal: {METAL_PROMPT}. Only the colour of the metal changes; the shape of every metal part stays as in the photo.
-[IF STONE DIFFERS]- Centre stone: one {GEM_PROMPT}, {SHAPE_PROMPT}, {CARAT_PROMPT}.
+[IF STONE DIFFERS]- Centre stone: one {GEM_PROMPT}, {SHAPE_PROMPT}, at the SAME SIZE as the stone in the photo.
 [IF SHAPE DIFFERS]- {SHAPE_LINE}
 [IF SHAPE DIFFERS]- {FACET_LINE}
 [IF SHAPE DIFFERS]- {PRONG_LINE}
@@ -293,7 +296,7 @@ These remove the contradictions in Part 1. One change at a time, each tested bef
 | Check each tile before it is a guide picture (camera angle, no corner picture) | Freddie |
 | Approved top-view picture per look; guide pictures for East-West, Diamond Gallery and Tulip petals | Owner approves, Freddie renders |
 | Do the metals need their own guide picture each (Fiorella did), or does one white-metal pair hold | Test |
-| Stone size: render at the guide picture's size (a) or let the stone grow (b) | Owner |
+| Customer-facing note that the render shows a standard stone size (wording) | Owner, with Freddie |
 | Rail thickness "thicker than a prong": Freddie changes his Rail/Gallery line once the owner confirms it to him | Owner, then Freddie |
 | Fix the six contradictions in today's prompt now, or wait for v2 (Freddie is asking the owner) | Owner |
 | Stone origin of accent and bridge stones; birthstone place with bridge stones; `[OWNER CHECK]` lines in the glossary | Owner (from earlier) |
