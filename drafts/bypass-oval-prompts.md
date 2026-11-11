@@ -17,8 +17,12 @@
    is the likeliest cause of run 24's plain solitaire. The word is removed here. For the
    template: drop "symmetrical" from the base line whenever the band is Bypass.
 2. **The bypass is now tied to the prongs.** "Curve past each other, one in front and one
-   behind" doesn't say where the ends go. Here each end flows into a named place: one corner
-   prong, and the diagonally opposite corner prong. That is what the passed top view shows.
+   behind" doesn't say where the ends go. Here each end flows into a named place: the prong at
+   one rounded end of the oval, and the prong at the other rounded end. That is what the passed
+   top view shows.
+   **v2 (owner's answer, 2026-11-10): the four prongs sit at the tips and sides**, one at each
+   rounded end and one at the middle of each long side, not at the corners. The Prongs and Band
+   lines in both prompts were changed together to match.
 3. **The stone's direction is tied to the opening of the ring, not to the band.** "At a right
    angle to the band" has no clear meaning once the band swerves. In run 25's 3/4 view the oval
    lay along the band and faced the camera. The new wording uses the ring's opening (the way a
@@ -51,9 +55,9 @@ The ring (each part is described once; render exactly this):
 - Centre stone: one lab-grown colourless white diamond, oval cut, about 1.50 carat, in realistic proportion to the band. The outline is an elongated ellipse with two rounded ends and no points. It has brilliant faceting: many small triangular and kite-shaped facets that sparkle.
 - Orientation: north-south. The long axis of the oval points the same way as the opening of the ring, the direction a finger passes through it. In this view one rounded end of the oval is nearer the camera and the other is farther away, and the oval's two long sides face the left and right sides of the band. The oval never lies lengthwise along the curve of the band.
 - Setting: solitaire setting: one centre stone only, no side or halo stones.
-- Prongs: exactly four prongs with claw tips, at the four corners of the oval: two toward each rounded end, one on each side of it. No prong sits on the very end of the oval or at the middle of a long side. Each is one single prong that visibly touches and grips the edge of the stone.
+- Prongs: exactly four prongs with claw tips: one at each rounded end of the oval, and one at the middle of each long side. There are no prongs at the corners in between. Each is one single prong that visibly touches and grips the edge of the stone.
 - Height: low-set. The head sits down into the band, so the bottom tip of the stone (culet) rests at the top of the band, with no air gap, post or pedestal under it.
-- Band: bypass band. The band is one smooth, polished, rounded strip of metal whose two ends do not meet the head directly opposite each other. The end coming up the left side of the ring swerves toward one end of the oval and flows into the base of the corner prong there. The end coming up the right side swerves the opposite way, toward the other end of the oval, and flows into the base of the diagonally opposite corner prong. Each end narrows gently as it sweeps in. Seen from above, the two ends and the stone make a soft S shape with the stone held in the middle of the S. The two ends never touch each other, never cross over the stone, and neither one divides in two.
+- Band: bypass band. The band is one smooth, polished, rounded strip of metal whose two ends do not meet the head directly opposite each other. The end coming up the left side of the ring swerves toward one rounded end of the oval and flows into the base of the prong at that end. The end coming up the right side swerves the opposite way and flows into the base of the prong at the other rounded end. Each end narrows gently as it sweeps in. Seen from above, the two ends and the stone make a soft S shape with the stone held in the middle of the S. The two ends never touch each other, never cross over the stone, and neither one divides in two.
 
 Square image. One ring only. No hands, props, boxes, logos, watermark or text.
 
@@ -81,9 +85,9 @@ The ring (each part is described once; render exactly this):
 - Centre stone: one lab-grown colourless white diamond, oval cut, about 1.50 carat, in realistic proportion to the band. The outline is an elongated ellipse with two rounded ends and no points. It has brilliant faceting: many small triangular and kite-shaped facets that sparkle.
 - Orientation: north-south. The long axis of the oval points the same way as the opening of the ring, the direction a finger passes through it. In this view the oval's long axis runs up and down the picture, toward and away from the camera, and the two ends of the band come in from the left and the right. The oval never lies lengthwise along the band.
 - Setting: solitaire setting: one centre stone only, no side or halo stones.
-- Prongs: exactly four prongs with claw tips, at the four corners of the oval: two toward each rounded end, one on each side of it. No prong sits on the very end of the oval or at the middle of a long side. Each is one single prong that visibly touches and grips the edge of the stone.
+- Prongs: exactly four prongs with claw tips: one at each rounded end of the oval, and one at the middle of each long side. There are no prongs at the corners in between. Each is one single prong that visibly touches and grips the edge of the stone.
 - Height: low-set. The head sits down into the band, with no air gap, post or pedestal under the stone.
-- Band: bypass band. The band is one smooth, polished, rounded strip of metal whose two ends do not meet the head directly opposite each other. The end coming in from the left swerves toward one end of the oval and flows into the base of the corner prong there. The end coming in from the right swerves the opposite way, toward the other end of the oval, and flows into the base of the diagonally opposite corner prong. Each end narrows gently as it sweeps in. From this angle the two ends and the stone make a soft S shape with the stone held in the middle of the S. The two ends never touch each other, never cross over the stone, and neither one divides in two.
+- Band: bypass band. The band is one smooth, polished, rounded strip of metal whose two ends do not meet the head directly opposite each other. The end coming in from the left swerves toward one rounded end of the oval and flows into the base of the prong at that end. The end coming in from the right swerves the opposite way and flows into the base of the prong at the other rounded end. Each end narrows gently as it sweeps in. From this angle the two ends and the stone make a soft S shape with the stone held in the middle of the S. The two ends never touch each other, never cross over the stone, and neither one divides in two.
 
 Square image. One ring only. No hands, props, boxes, logos, watermark or text.
 
@@ -108,15 +112,17 @@ Avoid:
   not along the curve of the band?"
 - `seating` (3/4 view): "Is the stone's flat top level and facing up, seen at a slant from this
   camera, and not tilted to face the camera?"
-- `basket`: use the corner layout above. In the passed top view the prongs sit close to the tips
-  and the middle of the sides, not the corners. If the owner prefers that look, change the
-  Prongs line and this check together; tell me which.
+- `basket` (owner's answer: tips and sides): "Count the prongs holding the centre stone. Are
+  there exactly 4 single prongs: one at each rounded end of the oval and one at the middle of
+  each long side, with none at the corners in between?" Your current check says "four corners of
+  a square", which would fail this layout.
 
 ## Things to know before the render
 
-1. **Prong positions are my reading of "four corners".** See the `basket` note above. If NORE's
-   4-prong oval puts prongs elsewhere, the Prongs line and both Band lines (which name the
-   corner prongs) need the matching change before you render.
+1. **Prong positions are the owner's choice: tips and sides** (answered 2026-11-10). The
+   catalogue's 4-prong oval line says "like the four corners of a square". Whether that line
+   should change for every 4-prong oval, or only for the bypass band, is a question for the
+   owner.
 2. **Which end goes which way is left open in the 3/4 view** on purpose; the top view follows
    the reference. If NORE's bypass always sweeps one way, tell me and I'll fix the direction.
 3. **A north-south oval in a bypass is unusual.** Most bypass rings in photos hold the stone
