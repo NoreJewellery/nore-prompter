@@ -102,6 +102,65 @@ Avoid:
 
 ---
 
+## Run 26 result (2026-11-11): v2 FAILED by check and by eye; owner's verdict pending
+
+As reported by Freddie, and I've looked at `peter-bypass.jpg`: both views are a plain symmetrical
+solitaire with cathedral-style shoulders and a gap under the stone. No bypass. The prongs are
+nearer the corners than the tips and sides. The oval is north-south and its table is level,
+but that is the easy case on a symmetrical ring, so it proves little.
+
+**Do not render v2 again.** What I got wrong:
+
+1. I rewrote the one sentence that had worked. Run 25's "one end passing in front of the stone
+   and the other behind it, so the band is clearly not symmetrical from any angle" produced a
+   bypass in the 3/4 view once and in both top views. My replacement ("comes up the side,
+   swerves, flows into the base of the prong, narrows gently, soft S") reads like a description
+   of cathedral shoulders rising into a head, and that is what Gemini drew.
+2. I cut the repetition. Run 25 says the band is not symmetrical three times (Band, Band form,
+   DON'T). "Say each fact once" helped on the standard rings, but a feature that fights
+   Gemini's default seems to need the weight.
+3. My "symmetrical in the style line" diagnosis was not the main cause: run 25 had that word
+   and still drew a bypass.
+
+### v3, option 1 (words only): run 25's prompt with three lines changed
+
+Start from `bypass-prompt-run25-front.txt` exactly as it is, since the owner passed it. Change
+only these lines, so the test has one variable (the stone's direction):
+
+- **Band** (keep your sentence, add the last two): "bypass band: the two ends of the band curve
+  past each other around the centre stone instead of meeting it head-on, one end passing in
+  front of the stone and the other behind it, so the band is clearly not symmetrical from any
+  angle. 'In front' means beside the rounded end of the oval nearest the camera, and 'behind'
+  means beside its far rounded end. Only the band swerves; the stone does not turn to follow
+  it."
+- **Stone orientation** (replace): "north-south: the long axis of the oval points the same way
+  as the opening of the ring, the direction a finger passes through it. In this view one
+  rounded end of the oval is nearer the camera and the other is farther away. The oval never
+  lies lengthwise along the curve of the band."
+- **Stone seating** (replace the last sentence): "...Its flat top is level and faces straight up
+  at the ceiling, so from this camera it is seen at a slant, with the side of the stone and its
+  prongs visible below it. It is never tilted to face the camera."
+- **Prong layout**: your tips-and-sides line for Bypass ovals, as now in the code.
+
+Honest odds: this keeps what produced the bypass and only tightens the direction of the stone.
+Run 25 already failed on that direction once, so this is not a sure first-time pass.
+
+### v3, option 2 (reference picture): I think this is the stronger route
+
+Your own notes say an approved picture plus "change only X" holds a design far better than
+words, and Gemini's pull toward a classic solitaire is exactly a words problem. It also fits the
+owner's rule: still one call per view, with one reference image, and no extra render.
+
+- Reference for the 3/4 call: the owner-passed bypass top view (`nb-bypass-white-oval-v2-top-1`)
+  or, better, an owner-approved 3/4 bypass picture once one exists.
+- Reference line (third in the prompt, after the camera line): "The attached image is an approved
+  NORE ring with a bypass band. Copy its band exactly: the way the two ends of the band sweep
+  past the centre stone on opposite sides instead of meeting it head-on. The camera angle, metal,
+  stone, shape and prongs come from the description below, not from the image."
+- Then the ring description and avoid list as in option 1.
+- Risk to check on the first render: Gemini may also copy the reference's camera angle. The
+  camera line stays second, and the check should fail a top-view angle on the 3/4 call.
+
 ## Check questions to match (suggested)
 
 - `band` (both views): "Do the two ends of the band reach the head at different ends of the
