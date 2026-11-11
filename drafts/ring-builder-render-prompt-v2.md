@@ -36,11 +36,15 @@
    claws). Naming a look in an image prompt can draw it.
 5. **Failed checks become permanent prompt lines** (`src/lessons.js`, up to 10 "Make sure" lines
    per view). When the checker is wrong, its mistake is added to later customers' prompts.
-6. **Guide pictures exist for the 3/4 view only.** Freddie lists the approved look tiles as 3/4,
-   white background, centred, mostly 14k yellow gold ovals. On the contact sheet Peter saw
-   (`solitaire-13-final.jpg`), Petite, Double-Row Pavé and Baguette Channel look like other
-   angles, and some tiles have a small band picture in the corner. Check each tile before it is
-   used as a guide. No look has an approved top-view picture.
+6. **Guide pictures exist for the 3/4 view only, and not all are usable.** The Solitaire band
+   tiles are white metal with round stones of about 1 ct (Freddie's correction, Nov 11). Four
+   are not at the 3/4 camera and can't be guides as they are: Petite (low front), Double-Row
+   Pavé (straight-on front), Baguette Channel (lying on its side) and Bezel Stations (more
+   upright). Freddie will check the Three-Stone and Bezel tiles one by one. Some tiles have a
+   small band picture in the corner. No look has an approved top-view picture.
+7. **Freddie confirmed all six contradictions in point 3** by printing today's prompts. The
+   worst is the DON'T line that forbids the pavé stones. He measured 959 words (plain ring, 3/4),
+   820 (plain ring, top) and 1,128 (Pavé with bridge stones, 3/4).
 
 ### Freddie's numbers (2026-11-11, `nore-freddie/drafts/for-peter-render-fail-stats-2026-11-11.md`)
 
@@ -88,8 +92,9 @@ complex ring.
 - A look with no approved 3/4 picture yet uses today's prompt with the fixes in Part 6.
 
 **Which pictures exist (Freddie, Nov 11):**
-- 3/4 view: approved tiles for 16 Solitaire bands, 10 Three-Stone looks and 9 Bezel looks. None
-  for East-West, Diamond Gallery or Tulip petals.
+- 3/4 view: approved tiles for 16 Solitaire bands (12 at the 3/4 camera; Petite, Double-Row
+  Pavé, Baguette Channel and Bezel Stations need a new picture), 10 Three-Stone looks and 9
+  Bezel looks (not yet checked one by one). None for East-West, Diamond Gallery or Tulip petals.
 - Top view: none. Until a look has an approved top picture, its top view uses prompt 4b with the
   approved 3/4 render of this same ring as the one attached picture (today's chaining, which
   passed 8 of 8 views on the four common rings), plus the "ONE ring with ONE centre stone" line.
@@ -97,6 +102,21 @@ complex ring.
   approves it. The run 30 and run 33 top views the owner passes can be the first ones.
 - Attaching a look picture to the 3/4 call is possible in the engine (Fiorella does it). The
   call code is Becky's, so the change needs her.
+
+**Two risks Freddie raised (Nov 11). Both are untested and both are in the test plan.**
+
+1. **Stone size.** The tiles show about 1 ct and customers choose 1 to 10 ct. "Keep the head
+   exactly as in the photo" fights a much bigger stone. Fiorella avoided this by always rendering
+   at one standard size (owner, Nov 10). Two ways to handle it, for the owner to choose:
+   - (a) Render every ring at the guide picture's stone size and show the chosen carat as text,
+     as Fiorella does.
+   - (b) Let the stone grow, with this extra Changes line (new wording, untested): "The centre
+     stone is larger than in the photo: {CARAT_PROMPT}. The head and its prongs are scaled up in
+     proportion to hold it. The band keeps the width it has in the photo." If large sizes still
+     redraw the ring, add one guide picture per size range.
+2. **Metal.** Fiorella needed its own approved picture per metal. Whether one white-metal tile
+   recolours cleanly to yellow or rose is not known. Test it on the first rings; if it fails,
+   each look needs one picture per metal colour.
 
 ## 4. The prompts
 
@@ -273,4 +293,7 @@ These remove the contradictions in Part 1. One change at a time, each tested bef
 | Check each tile before it is a guide picture (camera angle, no corner picture) | Freddie |
 | Approved top-view picture per look; guide pictures for East-West, Diamond Gallery and Tulip petals | Owner approves, Freddie renders |
 | Do the metals need their own guide picture each (Fiorella did), or does one white-metal pair hold | Test |
+| Stone size: render at the guide picture's size (a) or let the stone grow (b) | Owner |
+| Rail thickness "thicker than a prong": Freddie changes his Rail/Gallery line once the owner confirms it to him | Owner, then Freddie |
+| Fix the six contradictions in today's prompt now, or wait for v2 (Freddie is asking the owner) | Owner |
 | Stone origin of accent and bridge stones; birthstone place with bridge stones; `[OWNER CHECK]` lines in the glossary | Owner (from earlier) |
