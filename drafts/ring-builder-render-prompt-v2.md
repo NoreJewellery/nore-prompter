@@ -298,5 +298,5 @@ These remove the contradictions in Part 1. One change at a time, each tested bef
 | Do the metals need their own guide picture each (Fiorella did), or does one white-metal pair hold | Test |
 | Customer-facing note that the render shows a standard stone size (wording) | Owner, with Freddie |
 | Rail thickness "thicker than a prong": Freddie changes his Rail/Gallery line once the owner confirms it to him | Owner, then Freddie |
-| Fix the six contradictions in today's prompt now, or wait for v2 (Freddie is asking the owner) | Owner |
+| Fix the six contradictions in today's prompt now, or wait for v2 | DECIDED: the owner chose "Wait for Peter's v2" (relayed by Freddie, Nov 11). Today's prompts stay as they are; the Part 6 fixes go in with v2, once approved |
 | Stone origin of accent and bridge stones; birthstone place with bridge stones; `[OWNER CHECK]` lines in the glossary | Owner (from earlier) |
