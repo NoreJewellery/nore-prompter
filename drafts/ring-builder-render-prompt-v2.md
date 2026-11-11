@@ -455,7 +455,14 @@ If the pear still flips between runs with this wording, the 3/4 shape question b
 for pear, heart and marquise, and the exact outline is judged in the top view only.
 
 A third replay (the pear pictures and the run 26 pair, or all 35 at about $0.70) needs a new yes
-from the owner. Run 42 used the "short re-check" he approved.
+from the owner. Run 42 used the "short re-check" he approved. Freddie will not spend on a third
+replay now: the guide-picture question needs Becky's checker change first (the guide picture
+passed to the check), and he will propose its test to the owner together with the December test
+rings.
+
+Prong positions, from run 42's report: the positions question was recorded on every top view.
+It disagreed only on the two Bypass top views (runs 25 and 26). On the other top views in the
+set it agreed with the owner while still blocking. So "note-only on Bypass only" stays.
 
 ## 8. Test plan (each step needs the owner's yes)
 
@@ -479,8 +486,11 @@ from the owner. Run 42 used the "short re-check" he approved.
 | Rail/Gallery rail and bridge | ANSWERED by the owner's labelled diagram (Nov 11): "that image is the correct terminology"; "gallary rail and gallary are two different things" |
 | Customer-facing names: rename the step "Choose the bridge" (it holds gallery choices) and the option "Rail/Gallery" (it joins two parts) to match the standard names | Owner decides, Freddie applies |
 | Today's code and check questions call the bridge "the gallery rail" in places (for example the bridge-stones top-view check). Those words now name the wrong part | Freddie |
-| Second checker replay with the five reworded questions in Part 7a (cents, no renders) | Owner approves, Freddie runs |
-| Which picture had the "unclear" band answer in run 41 | Freddie |
+| Second checker replay with the reworded questions | DONE: run 42, $0.70 (Part 7c) |
+| Which picture had the "unclear" band answer in run 41 | ANSWERED: run 25 3/4 (Freddie) |
+| Checker change: pass the guide picture to the check, for the Bypass guide question (Part 7c) and the "same build as the guide" question (Part 7) | Becky, with the owner's approval |
+| Test of the Bypass guide question and the pear wording (cents) | Owner approves; Freddie proposes it with the December test rings |
+| What exactly is wrong with run 26 in the owner's eyes (`[OWNER CHECK]` in Part 7c) | Owner |
 | Fail counts per check and per view for real customer designs (counts only, no customer rows) | Becky |
 | Engine change: attach the look's picture to the 3/4 call | Becky, with the owner's approval |
 | Check each tile before it is a guide picture (camera angle, no corner picture) | Freddie |
