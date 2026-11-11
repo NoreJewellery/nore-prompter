@@ -70,3 +70,23 @@ Entry format:
   curved, under the head = the bridge).
 - New rule: none (the owner hasn't given one). Freddie's top-view wording now says: "do not move
   the stones onto the shoulders or up onto the halo rail... the halo rail has no stones".
+
+## Entry #4 — FLOP
+- Date: 2026-11-11
+- Prompt (library # if saved) and tool / agent: Peter's bypass oval prompts v2, 3/4 view and top
+  view (drafts/bypass-oval-prompts.md); Gemini gemini-3-pro-image, rendered word for word by
+  Freddie as run 26. Not in the library.
+- Result (owner's facts only, relayed by Freddie): FAIL, both views. Owner: "peters is not by
+  pass thats a messed up solitare ours is a bypass". Run 25 (Freddie's template with "one end
+  passing in front of the stone and the other behind it ... not symmetrical from any angle") is
+  the owner's reference for what a NORE bypass looks like. Cost of run 26: $0.31.
+- Why it failed: Peter rewrote the sentence that had already produced a bypass. The new wording
+  (each end "swerves" and "flows into the base of the prong", "narrows gently", "soft S") reads
+  like cathedral shoulders rising into a head. Peter also removed the repetition: run 25 says
+  the band is not symmetrical three times.
+- Lesson: (1) When an owner-passed prompt exists, start from it and change one thing at a time;
+  never rewrite the wording that produced the pass. (2) "Say each fact once" suits standard
+  rings, but a feature that goes against Gemini's default (here, a non-symmetrical band) needs
+  its proven wording and its repetition kept. (3) A first render of rewritten wording is a
+  test, not a likely pass; say so before the spend.
+- New rule: none (the owner hasn't given one).
