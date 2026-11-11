@@ -36,9 +36,28 @@
    claws). Naming a look in an image prompt can draw it.
 5. **Failed checks become permanent prompt lines** (`src/lessons.js`, up to 10 "Make sure" lines
    per view). When the checker is wrong, its mistake is added to later customers' prompts.
-6. **The tile pictures are not at the render camera.** They are round stones in white metal at
-   mixed angles (Petite and Double-Row Pavé are low or face-on, Baguette Channel lies down). They
-   can't be used as guide pictures as they are.
+6. **Guide pictures exist for the 3/4 view only.** Freddie lists the approved look tiles as 3/4,
+   white background, centred, mostly 14k yellow gold ovals. On the contact sheet Peter saw
+   (`solitaire-13-final.jpg`), Petite, Double-Row Pavé and Baguette Channel look like other
+   angles, and some tiles have a small band picture in the corner. Check each tile before it is
+   used as a guide. No look has an approved top-view picture.
+
+### Freddie's numbers (2026-11-11, `nore-freddie/drafts/for-peter-render-fail-stats-2026-11-11.md`)
+
+- **Band is the most-failed check by far:** 31 fails in 201 tile tries. Bridge is next with 8,
+  then straight 4 and prongs 3. First-try passes by group: band 13 of 20, look 15 of 27, bridge
+  2 of 7; stones, shapes, gemstones and settings pass almost every time.
+- **A second try passes only about half the time:** 17 of 33. Tiles pass first try 135 of 168.
+- **The checker is wrong in both directions.** Run 30: 6 of 8 fails looked right. Run 38: the
+  Tulip passed both views and the owner said it was wrong. The calibration set has 3 pictures.
+- **The top view invents extra objects** when it is made from the 3/4 picture (run 39: a second
+  head with its own stone; run 37: a hidden-halo look).
+- **Never passed a full design:** Diamond Gallery, Tulip petals, the East-West looks. Most new
+  band looks have an approved tile but no tested full design.
+- **Cost:** $0.154 per image, $0.308 per design. An attached picture adds nothing visible at that
+  rounding (not measured exactly).
+- **Missing:** fail counts per check and view for real customer designs. Becky's back end has
+  them.
 
 ## 2. The owner's answers (2026-11-11)
 
@@ -62,15 +81,22 @@ is the Fiorella method (`src/design-refs.js`), which is the only method the owne
 complex ring.
 
 - A "look" is one setting with one band, e.g. Solitaire + Half Pavé.
-- Each view is an edit of **its own** approved picture. The top view is not chained from the 3/4
-  render (F19: two pictures that disagree made top views worse).
+- Each view is an edit of **its own** approved picture. The goal is that the top view is no
+  longer chained from the 3/4 render (F19: two pictures that disagree made top views worse; runs
+  37 and 39: the chained top view invented a second head and a hidden-halo look).
 - Still one Gemini call per view. Two tries per view and the $1 cap stay as they are.
-- A look with no approved pair yet uses today's prompt with the fixes in Part 6.
+- A look with no approved 3/4 picture yet uses today's prompt with the fixes in Part 6.
 
-**`[FREDDIE TO CONFIRM]`** which approved pairs exist. The run 30 and run 33 test renders
-(`review/gallery-tests/ss-*-white-oval-front-1.png` and `-top-1.png`) are at the right cameras.
-The ones the owner passes can be the first guide pictures. Missing looks need one approved pair
-each (about $0.31 per look if it passes first try).
+**Which pictures exist (Freddie, Nov 11):**
+- 3/4 view: approved tiles for 16 Solitaire bands, 10 Three-Stone looks and 9 Bezel looks. None
+  for East-West, Diamond Gallery or Tulip petals.
+- Top view: none. Until a look has an approved top picture, its top view uses prompt 4b with the
+  approved 3/4 render of this same ring as the one attached picture (today's chaining, which
+  passed 8 of 8 views on the four common rings), plus the "ONE ring with ONE centre stone" line.
+- A top picture per look costs about $0.154 each to make, if it passes first try and the owner
+  approves it. The run 30 and run 33 top views the owner passes can be the first ones.
+- Attaching a look picture to the 3/4 call is possible in the engine (Fiorella does it). The
+  call code is Becky's, so the change needs her.
 
 ## 4. The prompts
 
@@ -120,6 +146,13 @@ Square image. One ring only. No hands, props, boxes, logos or watermark, and no 
 
 - In `VIEWS.top`, the words "with the shoulders sweeping up into the head" are sent only when
   Cathedral arches are chosen.
+- **While a look has no approved top picture:** attach the approved 3/4 render of this same ring
+  and replace the two lines after `{PROMPT_BASE}` with today's proven pair: `Camera: {VIEWS.top}.`
+  and "The attached image is the approved 3/4 view of this exact ring. Show the SAME ring (same
+  stone, shape, colour, prongs, setting, band and metal, and the stone pointing the same way
+  relative to the band) from the new camera angle above. Change only the camera." Then send no
+  Changes list, only the top-view lines of the chosen extras (Part 5), today's hidden-prongs
+  line, and the closing lines.
 
 ### 4c. Re-render when a view fails (one retry per view, as today)
 
@@ -206,8 +239,15 @@ These remove the contradictions in Part 1. One change at a time, each tested bef
 3. **Calibrate before use.** Replay the new questions (OpenAI only, cents) on every picture the
    owner has already passed or failed. A question that disagrees with the owner is rewritten. No
    Gemini spend.
-4. **`[FREDDIE'S DATA NEEDED]`** fail counts per check id, to confirm which checks cause the
-   false fails. The blocking and note-only lists above are my proposal until then.
+4. **The calibration set is too small.** It has 3 pictures. Add every picture the owner has
+   passed or failed by eye (run 22, 25, 26, 30, 38, 39 and the Nov 8 overrides) with the owner's
+   verdict, and keep adding. The checker has been wrong both ways: it failed good rings in run 30
+   and passed a wrong Tulip in run 38.
+5. **Band and bridge first.** They cause most fails on Freddie's tile data (band 31, bridge 8).
+   How many of those band fails were good pictures is not known, so the band question is the
+   first one to replay against the owner's verdicts.
+6. Fail counts for real customer designs are still missing (Becky has them). The blocking and
+   note-only lists above are my proposal until those are in.
 
 ## 8. Test plan (each step needs the owner's yes)
 
@@ -228,7 +268,9 @@ These remove the contradictions in Part 1. One change at a time, each tested bef
 | Item | Who |
 |---|---|
 | Marked photo: Rail/Gallery rail and bridge | Owner |
-| Which approved picture pairs exist; cost of a call with one attached picture; whether the engine can attach a look picture to the 3/4 call | Freddie |
-| Fail counts per check and per view | Freddie |
+| Fail counts per check and per view for real customer designs (counts only, no customer rows) | Becky |
+| Engine change: attach the look's picture to the 3/4 call | Becky, with the owner's approval |
+| Check each tile before it is a guide picture (camera angle, no corner picture) | Freddie |
+| Approved top-view picture per look; guide pictures for East-West, Diamond Gallery and Tulip petals | Owner approves, Freddie renders |
 | Do the metals need their own guide picture each (Fiorella did), or does one white-metal pair hold | Test |
 | Stone origin of accent and bridge stones; birthstone place with bridge stones; `[OWNER CHECK]` lines in the glossary | Owner (from earlier) |
