@@ -54,6 +54,10 @@ Entry format:
 
 ## Entry #3 — FLOP
 - Date: 2026-11-10
+- Status: TERM CORRECTED 2026-11-11. The owner's labelled diagram shows the gallery rail and the
+  bridge are two different parts (gallery rail: joins the prongs under the stone; bridge: the
+  bar at the base of the head, below it). Where this entry says "gallery rail", read "bridge".
+  See drafts/jewellery-glossary.md. The render result and the lesson are unchanged.
 - Prompt (library # if saved) and tool / agent: ring builder bridge-stones line, top view (v1.3
   plus Freddie's correction, which ruled out the shoulders but did not mention the halo rail);
   Gemini gemini-3-pro-image.

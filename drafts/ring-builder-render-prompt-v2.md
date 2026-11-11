@@ -75,7 +75,7 @@
 | Pavé band length | About three quarters of the way round |
 | Rail thickness | Thicker than a prong |
 | Rail/Gallery | Plain metal. Diamond Gallery has the diamonds, low in the gallery |
-| Is the Rail/Gallery rail the bridge? | No, two parts. **The owner will send a marked photo** |
+| Is the Rail/Gallery rail the bridge? | No, two parts. The owner sent a labelled parts diagram (third-party, not stored): the **gallery rail** joins the prongs under the stone; the **bridge** is the bar at the base of the head over the finger opening; a **hidden halo** sits above both, right under the stone's edge |
 | Stone size in the render | Keep one size (the guide picture's size; the carat is shown as text) |
 
 ## 3. The method
@@ -205,9 +205,9 @@ One line each. The guard is the one mistake that option has actually produced.
 
 | Option | 3/4 view line | Top view line |
 |---|---|---|
-| Rail/Gallery | `[OWNER PHOTO NEEDED: where this rail sits]` ... a thick, sturdy plain metal rail, clearly thicker than a prong and close to the thickness of the band, never a thin wire | Leave out (hidden under the stone) |
+| Rail/Gallery | "Rail gallery: a thick, sturdy plain metal rail that runs round the head and joins the prongs together below the centre stone, about halfway down the prongs and above the bridge; clearly thicker than a prong and close to the thickness of the band, never a thin wire; it has no stones." (Peter reads the builder's "Rail/Gallery" as the diagram's "gallery rail": `[OWNER CHECK]`) | Leave out (hidden under the stone) |
 | Diamond Gallery | Today's line, unchanged (owner confirmed it has diamonds, low in the gallery) | Leave out, and add: "The halo rail, right at the edge of the centre stone, has no stones." |
-| Stones on the bridge | Today's line, with its ending changed to "the halo rail (the rail right at the edge of the centre stone) has no stones" and **without** "the shoulders and the band have no stones" when the band has stones. `[OWNER PHOTO NEEDED: bridge vs Rail/Gallery rail]` | Today's top wording: "do not move the stones onto the shoulders or up onto the halo rail... the halo rail has no stones" |
+| Stones on the bridge | Today's line, with its ending changed to "the halo rail (the rail right at the edge of the centre stone) has no stones" and **without** "the shoulders and the band have no stones" when the band has stones. With Rail/Gallery also chosen, add: "The gallery rail above the bridge stays plain metal." The bridge is the bar at the base of the head over the finger opening, below the gallery rail (owner's diagram, Nov 11); today's line already places it there. | Today's top wording: "do not move the stones onto the shoulders or up onto the halo rail... the halo rail has no stones" |
 | Tulip petals | Today's line (Freddie's note on run 39 says its 3/4 view matched the owner's photos; the owner hasn't confirmed that to Peter) | Today's `TULIP_TOP_LINE` |
 | Cathedral arches | Today's line | Today's `CATHEDRAL_LINE` |
 | Two-tone | "The prongs holding the centre stone are bright white gold. This changes their colour only: no prongs are added. The rest of the ring stays {yellow/rose} gold." (one word, "prongs"; "claws" removed) | Same |
@@ -290,7 +290,8 @@ These remove the contradictions in Part 1. One change at a time, each tested bef
 
 | Item | Who |
 |---|---|
-| Marked photo: Rail/Gallery rail and bridge | Owner |
+| Rail/Gallery rail and bridge | ANSWERED by the owner's labelled diagram (Nov 11). One check left: that the builder's "Rail/Gallery" choice is the diagram's "gallery rail" |
+| Today's code and check questions call the bridge "the gallery rail" in places (for example the bridge-stones top-view check). Those words now name the wrong part | Freddie |
 | Fail counts per check and per view for real customer designs (counts only, no customer rows) | Becky |
 | Engine change: attach the look's picture to the 3/4 call | Becky, with the owner's approval |
 | Check each tile before it is a guide picture (camera angle, no corner picture) | Freddie |
