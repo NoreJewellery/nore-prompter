@@ -77,6 +77,12 @@ Entry format:
 
 ## Entry #4 — FLOP
 - Date: 2026-11-11
+- Status: OWNER'S CAUSE ADDED 2026-11-11. Asked what was wrong with run 26, the owner said: "the
+  bypass design by default is correct its the camera angles that were not consistant with the
+  gemini render if we ask a differetn angle it messes it up". So the cause in the owner's words
+  is the camera angle the prompt asked for. "Why it failed" below is Peter's own analysis and
+  the owner has not confirmed it. Added lesson: for a Bypass, never ask Gemini for a camera
+  angle of our own; keep the angle of the approved picture.
 - Prompt (library # if saved) and tool / agent: Peter's bypass oval prompts v2, 3/4 view and top
   view (drafts/bypass-oval-prompts.md); Gemini gemini-3-pro-image, rendered word for word by
   Freddie as run 26. Not in the library.

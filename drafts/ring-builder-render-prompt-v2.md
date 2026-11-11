@@ -82,6 +82,7 @@
 | Part names | "fix my wording and refer to the image as that image is the correct terminology" (the labelled diagram) |
 | Gallery rail vs gallery | "gallary rail and gallary are two different things" |
 | Where Diamond Gallery's diamonds go | "Along the gallery rail", confirmed as "Set into the gallery rail" (both answered in Freddie's chat, relayed by Freddie) |
+| What is wrong with the failed Bypass (run 26) | "the bypass design by default is correct its the camera angles that were not consistant with the gemini render if we ask a differetn angle it messes it up" (to Peter, Nov 11) |
 
 ## 3. The method
 
@@ -181,6 +182,31 @@ Square image. One ring only. No hands, props, boxes, logos or watermark, and no 
   relative to the band) from the new camera angle above. Change only the camera." Then send no
   Changes list, only the top-view lines of the chosen extras (Part 5), today's hidden-prongs
   line, and the closing lines.
+
+### 4b-2. Bypass: never ask for a camera angle of our own (owner, 2026-11-11)
+
+The owner: "the bypass design by default is correct its the camera angles that were not
+consistant with the gemini render if we ask a differetn angle it messes it up".
+
+My reading: Gemini draws a correct Bypass at its own angle (run 25: in the 3/4 picture the stone
+sits to one side and tilts toward the camera; in the top picture the ring opening is below the
+stone). When the prompt pushes for another angle, the design breaks. `VIEWS.front` says "centre
+stone sitting on top of the ring" and `VIEWS.top` says "the opening of the ring ... above and
+behind it", so today's camera lines ask for exactly what the approved Bypass does not show.
+
+For a Bypass band, in both views:
+
+- Attach the approved Bypass picture for that view (run 25) as the guide picture.
+- Replace the camera line with: `Camera: exactly the camera angle, framing, lighting and
+  background of the attached photo. Do not turn, tilt or re-frame the ring.` Do not send
+  `{VIEWS.front}` or `{VIEWS.top}`.
+- The top view uses run 25's top picture as its guide. It is not made by "Change only the
+  camera" from the 3/4 render.
+- Checker: on Bypass the camera question (`view`) is note-only, like `seating`. A camera
+  difference never fails a Bypass.
+
+New wording, not tested. Open: whether this holds for Bypass only or for other rings too (asked
+of the owner, Nov 11).
 
 ### 4c. Re-render when a view fails (one retry per view, as today)
 
@@ -439,9 +465,13 @@ the top view); SECOND, the render being checked. Blocking, and unclear counts as
 `The FIRST image is NORE's approved bypass ring, seen from the same camera angle. The SECOND image is the ring being checked. Ignore the metal colour and the centre stone's shape, colour and size. Look only at how the band and the centre stone are built together. In the FIRST image the centre stone sits low, held between the two ends of the band: one end of the band arrives at one end of the stone and the other end arrives at the opposite end, so the stone lies between them. Is the SECOND image built the same way? Answer false if in the SECOND image the stone stands on a raised head above the band, or if the band curls underneath or behind the stone as one continuous loop, or if both sides of the band rise evenly to the head like a solitaire.`
 
 Limits, said before any spend:
-- The description of the two builds is mine, from looking at run 25 and run 26. The owner's own
-  words on run 26 are only "a messed up solitare". `[OWNER CHECK: is "the stone stands up on a
-  head above the band, and the band curls under it" what is wrong with run 26?]`
+- The description of the two builds is mine, from looking at run 25 and run 26. The owner did
+  not confirm it. Asked what is wrong with run 26, he named the cause instead: "the bypass
+  design by default is correct its the camera angles that were not consistant with the gemini
+  render if we ask a differetn angle it messes it up" (Nov 11). So the first fix is in the
+  render prompt (Part 4b-2: never ask for our own camera angle on a Bypass), and this check is
+  the backstop. Its "answer false if ..." list stays my own reading until a second owner-judged
+  Bypass exists.
 - It can be tested on run 26 only (2 pictures, a few cents). Run 25 can't be tested against
   itself. Run 25 is the only Bypass the owner has passed, so this question can't be proven until
   the owner passes a second Bypass.
@@ -490,7 +520,8 @@ set it agreed with the owner while still blocking. So "note-only on Bypass only"
 | Which picture had the "unclear" band answer in run 41 | ANSWERED: run 25 3/4 (Freddie) |
 | Checker change: pass the guide picture to the check, for the Bypass guide question (Part 7c) and the "same build as the guide" question (Part 7) | Becky, with the owner's approval |
 | Test of the Bypass guide question and the pear wording (cents) | Owner approves; Freddie proposes it with the December test rings |
-| What exactly is wrong with run 26 in the owner's eyes (`[OWNER CHECK]` in Part 7c) | Owner |
+| What exactly is wrong with run 26 in the owner's eyes | ANSWERED (Nov 11): the camera angle asked for, not the Bypass design. See Part 4b-2 |
+| Does "asking for a different angle messes it up" hold for Bypass only, or for other rings too | Owner |
 | Fail counts per check and per view for real customer designs (counts only, no customer rows) | Becky |
 | Engine change: attach the look's picture to the 3/4 call | Becky, with the owner's approval |
 | Check each tile before it is a guide picture (camera angle, no corner picture) | Freddie |
