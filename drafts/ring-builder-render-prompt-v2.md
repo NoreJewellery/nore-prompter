@@ -372,6 +372,35 @@ pictures the owner judges from now on.
 Naming note for Freddie: `ring-builder/src/prompt-v2.js` is my older normal template v1.1 (Nov
 10). It is not this document. This document's prompts are in Part 4.
 
+### 7b. Exact strings for the second replay (sent to Freddie, 2026-11-11)
+
+The owner said "yes to all" to Freddie's list of next steps (relayed by Freddie, Nov 11): Peter
+updates the questions, then a short re-check; Becky's change to attach the approved picture; the
+8 test rings, better in December's budget. The strings below are written in the engine's
+true/false form. `{...}` is a value the code already has. Still new wording, not replayed.
+
+- **`view`, 3/4 view** (replaces `'Is the camera angle a ' + viewText + '?'`; no Bypass
+  sentence added):
+  `Is this picture taken from a 3/4 angle: the ring stands upright on its band and is seen from the front and a little to one side, with the camera slightly above? Judge the camera only, not where the centre stone sits. Answer false only if the camera is clearly different: a view from straight above, a flat side-on view with no turn, or a ring lying flat or tipped over.`
+- **`view`, top view** (same; no Bypass sentence added):
+  `Is the ring seen from above, with the camera looking down onto the face of the centre stone, so the whole outline of the stone can be seen? Judge the camera only. Answer false only if this is clearly a side view or a 3/4 view where the top face of the stone is not toward the camera. Where the ring opening sits in the picture does not count.`
+- **`seating`**: text unchanged. On `band:bypass` it is note-only.
+- **`basket-count`, top view, blocking** (first half of today's `prongQuestion`):
+  `Count the prongs holding the CENTRE stone one by one (prongs holding side stones, halo or pavé stones do not count). Are there exactly {N pairs of claws (T tips) | N single prongs}? Answer false if you can clearly count a different number{, or if any prong is a double claw | nothing for pairs}{, or if {mustHave} is missing | nothing}.`
+- **`basket-positions`, top view** (second half of today's `prongQuestion`). Note-only on
+  `band:bypass`; blocking on every other band:
+  `Look at the prongs holding the CENTRE stone. Is there one at EVERY one of these positions: {positions joined with "; "}? Answer false if any position has no prong.`
+- **`shape-angle`, heart only, 3/4 view** (in `buildChecklist` and `buildDesignChecklist`; other
+  shapes keep today's text):
+  `The centre stone should be a heart. From this angle the cleft and the point may both be hidden. Answer false only if you can clearly see a shape that cannot be a heart: straight sides with square or cut corners, or a point at both ends. If you see a rounded outline and cannot tell, it is unclear, not false.`
+- **`band`, `band:bypass`, both views** (replaces `bandQuestion` plus the `BYPASS_FAIR.band`
+  sentence). "Must be seen": unclear counts as false for this question:
+  `Look at where the band meets the centre stone. On a bypass ring the two ends of the band do not meet: one end stops on one side of the stone, the other end stops on the other side, and they pass each other. Can you see the two ends passing each other? Answer false if both sides of the band run into the head the way a solitaire or cathedral band does, even if the band is bent, uneven or tilted. Also answer false if it is a split shank (one end dividing into two strands) or a twisted rope band.`
+
+One difference from Freddie's list: his says prong positions note-only; mine says note-only on
+Bypass only. The replay should record the positions answer on every top-view picture, so the
+owner's verdicts show which is right.
+
 ## 8. Test plan (each step needs the owner's yes)
 
 1. Checker replay on judged pictures. Cents, no Gemini. **First replay done: run 41, $1.40
