@@ -83,6 +83,7 @@
 | Gallery rail vs gallery | "gallary rail and gallary are two different things" |
 | Where Diamond Gallery's diamonds go | "Along the gallery rail", confirmed as "Set into the gallery rail" (both answered in Freddie's chat, relayed by Freddie) |
 | What is wrong with the failed Bypass (run 26) | "the bypass design by default is correct its the camera angles that were not consistant with the gemini render if we ask a differetn angle it messes it up" (to Peter, Nov 11) |
+| Does that hold for other rings too? | "Bypass only" |
 
 ## 3. The method
 
@@ -205,8 +206,8 @@ For a Bypass band, in both views:
 - Checker: on Bypass the camera question (`view`) is note-only, like `seating`. A camera
   difference never fails a Bypass.
 
-New wording, not tested. Open: whether this holds for Bypass only or for other rings too (asked
-of the owner, Nov 11).
+New wording, not tested. Scope: the owner answered "Bypass only" (Nov 11). Every other band
+keeps its camera line (`{VIEWS.front}`, `{VIEWS.top}`) as written in Parts 4a and 4b.
 
 ### 4c. Re-render when a view fails (one retry per view, as today)
 
@@ -521,7 +522,7 @@ set it agreed with the owner while still blocking. So "note-only on Bypass only"
 | Checker change: pass the guide picture to the check, for the Bypass guide question (Part 7c) and the "same build as the guide" question (Part 7) | Becky, with the owner's approval |
 | Test of the Bypass guide question and the pear wording (cents) | Owner approves; Freddie proposes it with the December test rings |
 | What exactly is wrong with run 26 in the owner's eyes | ANSWERED (Nov 11): the camera angle asked for, not the Bypass design. See Part 4b-2 |
-| Does "asking for a different angle messes it up" hold for Bypass only, or for other rings too | Owner |
+| Does "asking for a different angle messes it up" hold for Bypass only, or for other rings too | ANSWERED (Nov 11): "Bypass only" |
 | Fail counts per check and per view for real customer designs (counts only, no customer rows) | Becky |
 | Engine change: attach the look's picture to the 3/4 call | Becky, with the owner's approval |
 | Check each tile before it is a guide picture (camera angle, no corner picture) | Freddie |
