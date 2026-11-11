@@ -401,6 +401,62 @@ One difference from Freddie's list: his says prong positions note-only; mine say
 Bypass only. The replay should record the positions answer on every top-view picture, so the
 owner's verdicts show which is right.
 
+### 7c. Second replay, run 42 (Freddie, 2026-11-11): what held and what did not
+
+Run 42: the 7b wording on the same 35 pictures, one checker, $0.70 (covered by the owner's "yes
+to all", relayed by Freddie). Report: `nore-freddie/ring-builder/review/calibration-report-v2b.json`.
+
+| My pass test | Result |
+|---|---|
+| Run 19 heart 3/4 passes | Yes |
+| Run 26 fails in both views | Yes ("both sides run into the head") |
+| Run 25 3/4 and top pass | **No.** Both failed on my new Bypass band question |
+| Nothing that agreed in run 41 flips | 3 flips: one was a scope bug in the script (fixed by Freddie), two were the white pear 3/4 pictures |
+
+Total: 30 of 35 as run, 31 of 35 with Freddie's scope fix. Run 41 was 31 of 35. So the rewording
+moved the misses; it did not reduce them.
+
+What I take from it:
+
+1. **Words alone can't tell the approved Bypass from the failed one.** Today's question passes
+   both; my 7b question fails both. Item 7 in 7b is withdrawn. The Bypass band is judged by
+   comparing with the approved picture (below).
+2. **The run 41 "unclear" band answer was on run 25 3/4** (the approved ring), not run 26. So
+   the unclear rule did not cause run 26's false pass; the old wording did.
+3. **The pear at 3/4 is unstable.** The same unchanged question said "unclear" in run 41 and
+   "oval, no point" in run 42 on the same two pictures. A single answer on a borderline picture
+   is not reliable.
+4. **"A chosen feature must be seen" applies in one view only:** the view meant to show that
+   feature (3/4 for most). Applied in the top view too, it failed a good picture (run 22).
+5. Items 1 to 6 of 7b stand: camera-only `view`, Bypass `seating` as a note, the prong split,
+   and the heart wording did what they were written for.
+
+**Bypass band, guide-picture question (replaces 7b item 7; new wording, not replayed).** Two
+pictures go to the checker: FIRST, the owner-approved Bypass at the same view (run 25:
+`nb-bypass-white-oval-v2-front-1.png` for the 3/4 view, `nb-bypass-white-oval-v2-top-1.png` for
+the top view); SECOND, the render being checked. Blocking, and unclear counts as false.
+
+`The FIRST image is NORE's approved bypass ring, seen from the same camera angle. The SECOND image is the ring being checked. Ignore the metal colour and the centre stone's shape, colour and size. Look only at how the band and the centre stone are built together. In the FIRST image the centre stone sits low, held between the two ends of the band: one end of the band arrives at one end of the stone and the other end arrives at the opposite end, so the stone lies between them. Is the SECOND image built the same way? Answer false if in the SECOND image the stone stands on a raised head above the band, or if the band curls underneath or behind the stone as one continuous loop, or if both sides of the band rise evenly to the head like a solitaire.`
+
+Limits, said before any spend:
+- The description of the two builds is mine, from looking at run 25 and run 26. The owner's own
+  words on run 26 are only "a messed up solitare". `[OWNER CHECK: is "the stone stands up on a
+  head above the band, and the band curls under it" what is wrong with run 26?]`
+- It can be tested on run 26 only (2 pictures, a few cents). Run 25 can't be tested against
+  itself. Run 25 is the only Bypass the owner has passed, so this question can't be proven until
+  the owner passes a second Bypass.
+
+**Pear at 3/4 (`shape-angle`, pear only; other shapes keep today's text; new wording, not
+replayed):**
+
+`The centre stone should be a pear: one rounded end and one pointed end. From this angle the point may be hidden or look shorter. Answer false only if you can clearly see a shape that cannot be a pear: straight sides with square or cut corners, a point at both ends, or a cleft. If you see a rounded outline and cannot tell, it is unclear, not false.`
+
+If the pear still flips between runs with this wording, the 3/4 shape question becomes note-only
+for pear, heart and marquise, and the exact outline is judged in the top view only.
+
+A third replay (the pear pictures and the run 26 pair, or all 35 at about $0.70) needs a new yes
+from the owner. Run 42 used the "short re-check" he approved.
+
 ## 8. Test plan (each step needs the owner's yes)
 
 1. Checker replay on judged pictures. Cents, no Gemini. **First replay done: run 41, $1.40
