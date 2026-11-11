@@ -1,8 +1,10 @@
 # Ring builder render prompt v2 (Hers): guide picture + short edit
 
 - From: Peter (nore-prompter), 2026-11-11. For: the owner, then Freddie (nore-freddie).
-- Status: **DRAFT, NOT TESTED.** Nothing here is live. Freddie applies it only with the owner's
-  approval; every test render needs the owner's approval of that spend.
+- Status: **DRAFT. No render made with it yet.** Nothing here is live. Freddie applies it only
+  with the owner's approval; every test render needs the owner's approval of that spend.
+  The checker rules in Part 7 were replayed once on 35 judged pictures (run 41, Part 7a). The
+  render prompts in Part 4 are still untested.
 - Scope (owner, Nov 11): all of Hers (Solitaire, Three-Stone, Bezel, East-West). Fiorella keeps
   its own prompt. His is not covered.
 - Owner's request: "im spending way too much on renders as so many fail; i need a new prompt
@@ -272,19 +274,108 @@ These remove the contradictions in Part 1. One change at a time, each tested bef
 3. **Calibrate before use.** Replay the new questions (OpenAI only, cents) on every picture the
    owner has already passed or failed. A question that disagrees with the owner is rewritten. No
    Gemini spend.
-4. **The calibration set is too small.** It has 3 pictures. Add every picture the owner has
-   passed or failed by eye (run 22, 25, 26, 30, 38, 39 and the Nov 8 overrides) with the owner's
-   verdict, and keep adding. The checker has been wrong both ways: it failed good rings in run 30
-   and passed a wrong Tulip in run 38.
+4. **The calibration set is too small.** It had 3 pictures; since run 41 it has 35 (25 Fiorella,
+   only 10 normal rings). Add every picture the owner has passed or failed by eye (run 30, 38, 39
+   and the Nov 8 overrides are not in it yet) with the owner's verdict, and keep adding. The
+   checker has been wrong both ways: it failed good rings in run 30 and passed a wrong Tulip in
+   run 38.
 5. **Band and bridge first.** They cause most fails on Freddie's tile data (band 31, bridge 8).
    How many of those band fails were good pictures is not known, so the band question is the
    first one to replay against the owner's verdicts.
 6. Fail counts for real customer designs are still missing (Becky has them). The blocking and
    note-only lists above are my proposal until those are in.
 
+### 7a. Checker replay, run 41 (Freddie, 2026-11-11) and the question changes it calls for
+
+Source: `nore-freddie/drafts/checker-replay-run41-2026-11-11.md`. The owner approved it ("Start
+checker replay", then "All 35, both checkers", relayed by Freddie). Cost $1.40, no renders.
+
+What was replayed: today's questions with two of my rules added (unclear never fails; note-only
+questions never fail). The "same build as the guide picture" question was not replayed, because
+there are no guide pictures yet.
+
+| | Today's checker | With the two rules |
+|---|---|---|
+| Agrees with the owner, all 35 | 29 | 31 |
+| Owner's fails caught | 9 of 10 | 9 of 10 |
+| Good pictures failed | 5 | 3 |
+| Agrees with the owner, 10 normal rings | 7 | 7 |
+
+Plain reading: the two rules fixed two Fiorella pear pictures and broke nothing. On the normal
+rings they changed nothing: 7 of 10 before and after. The misses that are left all come from
+three pictures of two Bypass rings (runs 25 and 26) and one Fiorella heart (run 19).
+
+The changes below are **new wording, not replayed**. Each one is written for a miss in run 41.
+Today's question text is in `nore-freddie/ring-builder/src/spec.js` (`buildChecklist`),
+`bands.js` (`bandQuestion`) and `prongs.js` (`prongQuestion`).
+
+**New rule: a chosen feature must be seen.** "Unclear never fails" is right for details the
+camera angle hides. It is wrong for the one thing the customer chose that makes the ring
+different (the Bypass crossing, the Tulip petals, the Diamond Gallery row). For that feature's
+own question, in the view that is meant to show it, unclear counts as no. Without this rule a
+ring where the feature is missing can pass as "unclear". Run 41 marked one band answer unclear;
+Freddie to say which picture it was.
+
+1. **Camera question (`view`) asks about the camera only.** Today it also asks where the stone
+   sits ("centre stone sitting on top of the ring"), and `seating` asks that again, so one doubt
+   fails two questions (run 25, 3/4).
+   - 3/4 view: "Is this picture taken from a 3/4 angle: the ring stands upright on its band and
+     is seen from the front and a little to one side, with the camera slightly above? Judge the
+     camera only, not where the stone sits. Answer no only if the camera is clearly different: a
+     view from straight above, a flat side-on view with no turn, or a ring lying flat or tipped
+     over."
+   - Top view: "Is the ring seen from above, with the camera looking down onto the face of the
+     centre stone, so the whole outline of the stone can be seen? Judge the camera only. Answer
+     no only if this is clearly a side view or a 3/4 view where the top face of the stone is not
+     toward the camera. Where the ring opening sits in the picture does not count." (Run 25 top
+     failed on "ring opening below the stone"; the owner passed it.)
+2. **Stone seating (`seating`), 3/4 view.** Unchanged on every band except Bypass. On Bypass it
+   becomes note-only. Reason: on the owner's approved Bypass (run 25) the stone sits to one side
+   and tilts toward the camera, which is what the question forbids, and the extra "this is a
+   bypass ring" sentence did not stop the fail.
+3. **Top-view prongs (`basket`) split in two.**
+   - Count, blocking: "Count the prongs holding the CENTRE stone one by one (prongs holding side
+     stones, halo or pavé stones do not count). Are there exactly {COUNT}? Answer no if you can
+     count a different number." The must-have part (for example the V-shaped prong at a point)
+     stays blocking, as today.
+   - Exact positions: today's position list as its own question. Note-only on Bypass, where the
+     crossing band turns the head (run 25 top: the count was right, the owner passed it, the
+     positions failed it). Blocking on every other band until an owner-judged picture shows it is
+     too strict. One picture is not enough to loosen it everywhere.
+4. **Heart outline at 3/4 (`shape-angle`).** Today's question already allows a hidden cleft, and
+   the checker still answered "oval, no cleft" (run 19; the owner passed it). New wording names
+   what a clear "no" looks like: "The centre stone should be a heart. From this angle the cleft
+   and the point may both be hidden. Answer no only if you can clearly see a shape that cannot
+   be a heart: straight sides with square or cut corners, or a point at both ends. If you see a
+   rounded outline and can't tell, answer unclear." The exact outline stays blocking in the top
+   view.
+5. **Bypass band (`band`): the crossing must be seen.** Today's question does name the wrong
+   look, but its last sentence ("answer false only if the band is clearly symmetrical") lets a
+   bent solitaire pass (run 26; the owner: "a messed up solitare"). New wording: "Look at where
+   the band meets the centre stone. On a bypass ring the band's two ends do not meet: one end
+   stops on one side of the stone, the other end stops on the other side, and they pass each
+   other. Can you see the two ends passing each other? Answer no if both sides of the band run
+   into the head the way a solitaire band does, even if the band is bent, uneven or tilted."
+   The "must be seen" rule applies. Every other special band and every extra gets the same
+   treatment: its wrong look is named, as already listed above for the Tulip.
+
+**Test for these five changes (cents, no renders, needs the owner's yes):** replay the same 35
+pictures. They pass if: run 25 3/4 and run 25 top now pass; run 19 heart 3/4 passes; run 26 fails
+in both views; and no answer that agreed with the owner in run 41 flips. If the new Bypass
+question can't tell run 25 from run 26, the Bypass needs the guide-picture question instead,
+with run 25's approved pictures as the guide.
+
+Limit, said before the spend: these questions were written after seeing these same pictures, so
+passing this replay shows only that the wording is no longer wrong on them. The real proof is
+pictures the owner judges from now on.
+
+Naming note for Freddie: `ring-builder/src/prompt-v2.js` is my older normal template v1.1 (Nov
+10). It is not this document. This document's prompts are in Part 4.
+
 ## 8. Test plan (each step needs the owner's yes)
 
-1. Checker replay on judged pictures. Cents, no Gemini.
+1. Checker replay on judged pictures. Cents, no Gemini. **First replay done: run 41, $1.40
+   (Part 7a).** A second replay of the five reworded questions is the next cheap step.
 2. The owner picks or approves the guide pair for 8 looks.
 3. Render 8 rings that fail today with prompts 4a and 4b, one try per view. About $0.31 each,
    about $2.48 if all pass first time, $8.00 at most under the $1 cap. Suggested set: Solitaire
@@ -303,6 +394,8 @@ These remove the contradictions in Part 1. One change at a time, each tested bef
 | Rail/Gallery rail and bridge | ANSWERED by the owner's labelled diagram (Nov 11): "that image is the correct terminology"; "gallary rail and gallary are two different things" |
 | Customer-facing names: rename the step "Choose the bridge" (it holds gallery choices) and the option "Rail/Gallery" (it joins two parts) to match the standard names | Owner decides, Freddie applies |
 | Today's code and check questions call the bridge "the gallery rail" in places (for example the bridge-stones top-view check). Those words now name the wrong part | Freddie |
+| Second checker replay with the five reworded questions in Part 7a (cents, no renders) | Owner approves, Freddie runs |
+| Which picture had the "unclear" band answer in run 41 | Freddie |
 | Fail counts per check and per view for real customer designs (counts only, no customer rows) | Becky |
 | Engine change: attach the look's picture to the 3/4 call | Becky, with the owner's approval |
 | Check each tile before it is a guide picture (camera angle, no corner picture) | Freddie |
