@@ -12,6 +12,37 @@
   the **bridge** under the stone. The head sits on the **shoulders** (sometimes **cathedral**
   arches), which run into the **shank** (band).
 
+## NORE's standard part names (owner, 2026-11-11)
+
+The owner sent a labelled diagram, "Components of a Ring" (CaratHeritage.com), and said: "fix my
+wording and refer to the image as that image is the correct terminology". These names win over
+any other wording in this file, in prompts and in check questions. The picture belongs to another
+company and is not stored here; the positions below are in Peter's own words.
+
+| Name | Where it is |
+|---|---|
+| Center stone | The main stone on top |
+| Prong | Each metal post that grips the stone's edge |
+| Hidden halo | A ring of small stones right under the stone's edge (the level NORE also calls the halo rail) |
+| Gallery rail | The rail that runs round the head and joins the prongs, below the hidden-halo level |
+| Gallery | The open part of the head under the stone, below the gallery rail and above the bridge, seen from the side. **Not the same thing as the gallery rail** (owner: "gallary rail and gallary are two different things") |
+| Bridge | The bar at the very base of the head, across the top of the finger opening, between the shoulders |
+| Shoulder | Each side of the band where it rises to the head |
+| Accent stones | Small stones set along the shoulders and band |
+| Shank | The band round the finger |
+| Base / sizing area | The plain bottom of the shank, under the finger |
+
+What this changes in the builder's wording (proposals; Freddie applies them only with the owner's
+approval):
+- The builder's step "Choose the bridge" holds gallery choices (Rail/Gallery, Diamond Gallery,
+  Peekaboo, Filigree/Milgrain, Low/Flat). In prompts these lines should be labelled "Gallery",
+  never "Bridge". The only bridge option is the extra "Stones on the bridge".
+- "Rail/Gallery" joins two different parts in one name. Its line describes the **gallery rail**
+  (a plain metal rail joining the prongs; the owner's Nov 11 words to Freddie were "gallery
+  rails ... they look so thin"), so prompts call it "gallery rail".
+- "Diamond Gallery" puts its diamonds in the **gallery**, not on the gallery rail and not on the
+  bridge.
+
 ## The centre stone
 
 | Term | Where / what | Prompt wording (for Gemini) | Watch out |
@@ -31,9 +62,9 @@
 | Gallery | The side profile of the head under the stone (the rails and openings you see from the side); also the open space under the stone | "the gallery (the side of the head under the stone, seen in profile)" | Gemini fills it with decoration if it isn't described |
 | Halo rail (owner's term) | The rail right at the edge of the centre stone, just under the girdle. This is where a hidden halo sits. | "the halo rail (the metal rail right at the edge of the centre stone, just under its girdle)" | Owner's term (via Freddie, 2026-11-10). With bridge stones, always add "the halo rail has no stones", **especially in the top view** (run 22, Wins & Flops #3). |
 | Gallery rail | The rail that runs round the head and joins the prongs together under the stone. It sits **below** the hidden-halo position (the halo rail) and **above** the bridge. | "the gallery rail: a metal rail that runs round the head and joins the prongs together below the centre stone, about halfway down the prongs, above the bridge" | **CORRECTED 2026-11-11.** The owner sent Peter a labelled parts diagram (a third-party picture, not stored here) that shows the gallery rail and the bridge as two different parts. The Nov 10 relay "gallery rail = bridge" was wrong: never write them as the same part. |
-| Rail/Gallery (builder bridge choice) | The gallery rail above, in plain metal with no stones (owner, 2026-11-11). Thicker than a prong (owner, 2026-11-11). Peter reads the builder's "Rail/Gallery" as the diagram's "gallery rail" `[OWNER CHECK]`. | "a thick, sturdy plain metal rail that runs round the head and joins the prongs together below the centre stone, about halfway down the prongs and above the bridge; clearly thicker than a prong, never a thin wire; it has no stones" | Gemini draws rails thin like wire (owner, 2026-11-11). |
+| Rail/Gallery (builder bridge choice) | The gallery rail above, in plain metal with no stones (owner, 2026-11-11). Thicker than a prong (owner, 2026-11-11). The option's name mixes two parts; its line describes the gallery rail (see the standard names above). | "a thick, sturdy plain metal rail that runs round the head and joins the prongs together below the centre stone, about halfway down the prongs and above the bridge; clearly thicker than a prong, never a thin wire; it has no stones" | Gemini draws rails thin like wire (owner, 2026-11-11). |
 | The three levels under the stone | Top: the **halo rail**, right under the stone's edge (where a hidden halo sits). Middle: the **gallery rail**, joining the prongs. Bottom: the **bridge**, at the base of the head over the finger opening. | Name the level, say where it sits against the other two, and say which levels stay plain. | Every bridge-stone and gallery fail so far was small stones drawn on the wrong level (Wins & Flops #2 and #3; runs 35 and 37). |
-| Diamond Gallery (builder bridge choice) | Small diamonds low in the gallery, well below the centre stone (owner confirmed it has diamonds, 2026-11-11) | Freddie's live line | Gemini pulls the diamonds up to the stone like a hidden halo (runs 35 and 37, Freddie's notes). |
+| Diamond Gallery (builder bridge choice) | Small diamonds filling the gallery: below the gallery rail and above the bridge, well below the centre stone (owner confirmed it has diamonds, 2026-11-11; placement follows the standard names above) | Freddie's live line with one change: the diamonds are "set in thick, solid metal, below the gallery rail and above the bridge", not "set in a ... gallery rail" | Gemini pulls the diamonds up to the stone like a hidden halo (runs 35 and 37, Freddie's notes). |
 | Bridge | The bar at the very base of the head, across the top of the finger opening, **below the gallery rail** (owner's labelled diagram, 2026-11-11). The curved metal bar under the head that joins the two sides of the setting, **lower down, below the base of the prongs**, seen from the side as a shallow arch between the shoulders. On NORE's marked photo it's the arc the owner circled. **Not the cathedral arches, not the shoulders, and not the area hugging the underside of the stone (that's a hidden halo).** | "the bridge: the curved metal bar under the head that joins the two sides of the setting, lower down below the base of the prongs, seen from the side as a shallow arch between the shoulders; it is NOT a ring of stones hugging the underside of the centre stone (that would be a hidden halo)" | Owner-confirmed meaning (via Freddie, 2026-11-10). Never use "bridge" for the arches in a prompt. **Don't** place it "just below the girdle": that produced a hidden halo (run 22, Wins & Flops #2). |
 | Prongs / claws | The metal posts that rise from the head and grip the stone's girdle | Use one word per prompt: **"prongs"** | Mixing "claws" and "prongs" may add parts (run 20/21 hypothesis) |
 | Prong tip shapes | Round (ball), claw (pointed), flat, tab | "round prong tips" | `[OWNER CHECK]` which tips NORE uses |

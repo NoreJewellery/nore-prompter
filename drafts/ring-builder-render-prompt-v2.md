@@ -77,6 +77,8 @@
 | Rail/Gallery | Plain metal. Diamond Gallery has the diamonds, low in the gallery |
 | Is the Rail/Gallery rail the bridge? | No, two parts. The owner sent a labelled parts diagram (third-party, not stored): the **gallery rail** joins the prongs under the stone; the **bridge** is the bar at the base of the head over the finger opening; a **hidden halo** sits above both, right under the stone's edge |
 | Stone size in the render | Keep one size (the guide picture's size; the carat is shown as text) |
+| Part names | "fix my wording and refer to the image as that image is the correct terminology" (the labelled diagram) |
+| Gallery rail vs gallery | "gallary rail and gallary are two different things" |
 
 ## 3. The method
 
@@ -205,8 +207,8 @@ One line each. The guard is the one mistake that option has actually produced.
 
 | Option | 3/4 view line | Top view line |
 |---|---|---|
-| Rail/Gallery | "Rail gallery: a thick, sturdy plain metal rail that runs round the head and joins the prongs together below the centre stone, about halfway down the prongs and above the bridge; clearly thicker than a prong and close to the thickness of the band, never a thin wire; it has no stones." (Peter reads the builder's "Rail/Gallery" as the diagram's "gallery rail": `[OWNER CHECK]`) | Leave out (hidden under the stone) |
-| Diamond Gallery | Today's line, unchanged (owner confirmed it has diamonds, low in the gallery) | Leave out, and add: "The halo rail, right at the edge of the centre stone, has no stones." |
+| Rail/Gallery | "Gallery rail: a thick, sturdy plain metal rail that runs round the head and joins the prongs together below the centre stone, about halfway down the prongs and above the bridge; clearly thicker than a prong and close to the thickness of the band, never a thin wire; it has no stones." (The option's name mixes two parts. Its line describes the gallery rail, so the prompt says "gallery rail".) | Leave out (hidden under the stone) |
+| Diamond Gallery | Today's line with one change, to match the owner's standard names: "Diamond gallery: the open gallery LOW down under the head, between the two shoulders where the band meets the setting, is filled from side to side with small round diamonds set in thick, solid metal, below the gallery rail and above the bridge, on both sides of the ring; they sit well below the centre stone with clear metal between them and the stone; NOT a hidden halo hugging the underside of the stone". The words "set in a thick, solid metal gallery rail" are removed: the gallery and the gallery rail are two different parts. Today's placement words are kept because run 37's 3/4 view put the row low in the gallery (Freddie's note). | Leave out, and add: "The halo rail, right at the edge of the centre stone, has no stones." |
 | Stones on the bridge | Today's line, with its ending changed to "the halo rail (the rail right at the edge of the centre stone) has no stones" and **without** "the shoulders and the band have no stones" when the band has stones. With Rail/Gallery also chosen, add: "The gallery rail above the bridge stays plain metal." The bridge is the bar at the base of the head over the finger opening, below the gallery rail (owner's diagram, Nov 11); today's line already places it there. | Today's top wording: "do not move the stones onto the shoulders or up onto the halo rail... the halo rail has no stones" |
 | Tulip petals | Today's line (Freddie's note on run 39 says its 3/4 view matched the owner's photos; the owner hasn't confirmed that to Peter) | Today's `TULIP_TOP_LINE` |
 | Cathedral arches | Today's line | Today's `CATHEDRAL_LINE` |
@@ -237,6 +239,13 @@ These remove the contradictions in Part 1. One change at a time, each tested bef
 6. Pavé length and rail thickness: the owner's answers above.
 7. Learned "Make sure" lines: switch them off until the checker agrees with the owner (Part 7,
    point 3). Freddie's and the owner's call.
+8. Part names follow the owner's standard (drafts/jewellery-glossary.md, "NORE's standard part
+   names"). In prompts and checks:
+   - the label `Bridge:` on the Rail/Gallery, Diamond Gallery, Peekaboo, Filigree/Milgrain and
+     Low/Flat lines becomes `Gallery:`. Only "Stones on the bridge" uses the word bridge.
+   - the bridge-stones top-view check says the stones sit "low on the bridge", not "low on the
+     gallery rail".
+   - "rail gallery" becomes "gallery rail".
 
 ## 7. Checker v2 (proposal; Freddie calibrates it on pictures the owner has already judged)
 
@@ -290,7 +299,8 @@ These remove the contradictions in Part 1. One change at a time, each tested bef
 
 | Item | Who |
 |---|---|
-| Rail/Gallery rail and bridge | ANSWERED by the owner's labelled diagram (Nov 11). One check left: that the builder's "Rail/Gallery" choice is the diagram's "gallery rail" |
+| Rail/Gallery rail and bridge | ANSWERED by the owner's labelled diagram (Nov 11): "that image is the correct terminology"; "gallary rail and gallary are two different things" |
+| Customer-facing names: rename the step "Choose the bridge" (it holds gallery choices) and the option "Rail/Gallery" (it joins two parts) to match the standard names | Owner decides, Freddie applies |
 | Today's code and check questions call the bridge "the gallery rail" in places (for example the bridge-stones top-view check). Those words now name the wrong part | Freddie |
 | Fail counts per check and per view for real customer designs (counts only, no customer rows) | Becky |
 | Engine change: attach the look's picture to the 3/4 call | Becky, with the owner's approval |
