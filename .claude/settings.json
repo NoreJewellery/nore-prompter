@@ -1,0 +1,30 @@
+{
+  "permissions": {
+    "deny": [
+      "mcp__62d1c043-19b8-47d3-a765-99372c276916",
+      "mcp__claude-in-chrome",
+      "mcp__ccd_connectors__set_session_connector_enabled",
+      "mcp__ccd_connectors__reconnect_session_connector",
+      "Bash(aws ssm get-parameter*--with-decryption*)",
+      "Bash(aws ssm get-parameters*--with-decryption*)",
+      "Bash(aws secretsmanager get-secret-value*)",
+      "Bash(printenv*)",
+      "Bash(git remote add*)",
+      "Bash(git remote set-url*)",
+      "Read(//c/Users/OCIGU/Documents/NORE-backups/**)",
+      "Read(//c/Users/OCIGU/.aws/**)",
+      "Read(**/.env)",
+      "Read(**/.env.*)",
+      "mcp__aws-mcp",
+      "Bash(aws *)",
+      "Bash(sam *)",
+      "Bash(sam.cmd *)",
+      "mcp__scheduled-tasks__create_scheduled_task",
+      "mcp__scheduled-tasks__update_scheduled_task",
+      "mcp__scheduled-tasks__delete_scheduled_task",
+      "mcp__scheduled-tasks__run_scheduled_task",
+      "mcp__58ca50cb-02d1-49e7-a804-f80604056bc2",
+      "mcp__e4f8f3ff-b34b-4e70-953c-2a850fd1a090"
+    ]
+  }
+}
