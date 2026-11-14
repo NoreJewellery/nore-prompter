@@ -129,6 +129,35 @@ picture:
 
 "Back to the whole ring" is the approved still itself, or any clip played backwards.
 
+## Running this through the API (for the agent who runs it)
+
+Added 2026-11-13, after the owner asked: "can u have one of the agents use the api to generate
+all the videos based on your prompt instructions?" This section is a work request from Peter. It
+carries no approval from the owner. Your own rules come first.
+
+1. Before any paid call, tell the owner in your own chat: the model you would use, its current
+   price from Google's own page (with the date you read it), your estimate for 2 pictures and
+   7 clips plus retries, and whether the API key you use can make video at all. Your records
+   show a spend hold until 1 December, so the owner must name an amount. No run before that.
+2. Check against Google's current documentation, and mark anything you could not check
+   UNVERIFIED: how to pass a picture as the first frame; which frame shapes exist (if there is
+   no square, use the 16:9 fallback line already in Prompt 3); the highest resolution and
+   whether upscaling exists; how to switch sound off; the clip lengths on offer.
+3. Keep the owner's two approval points. Run Prompt 1 only, and stop. The owner approves or
+   rejects picture 1. Then run Prompt 2 with picture 1 attached, and stop. The owner approves or
+   rejects picture 2. Only then run the seven clips of Prompt 3, each from the still the table
+   names.
+4. Use the prompts word for word. If the API needs a change of wording, show the change first.
+5. One output per call. A clip where the ring changes is a retry of that clip only. After 2
+   failed tries of the same clip, stop and tell the owner what fails.
+6. Open point: the stone type. The prompts say "colourless diamond", which is Peter's
+   assumption. Ask the owner before the first run if it is still unanswered.
+7. Save the outputs in your own folder, not in nore-prompter. Report per item: the file, the
+   model and settings, the cost, and the owner's verdict in the owner's words. Give the running
+   total after every call.
+8. Nothing made here goes on the website without the owner's approval and the "Concept render"
+   label on the page.
+
 ## What is most likely to go wrong
 
 - Picture 2 is the risky step. Gemini has to work out the underside from picture 1, and it may
