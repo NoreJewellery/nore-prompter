@@ -1,7 +1,9 @@
 # Ring builder front-end revamp: prompt for Freddie, draft v1
 
 - From: Peter, 2026-11-13. For: Freddie, the front-end developer (`nore-freddie`).
-- Status: DRAFT for the owner. Untested. Not in the Prompt Library until the owner says SAVE PROMPT.
+- Status: REPLACED on 2026-11-13 by `freddie-clip-tour-builder-prompt.md`. The owner now wants
+  the builder built around the guide clips, and the old front end has been deleted. Kept for the
+  record. It was a DRAFT, untested, and never in the Prompt Library.
 - How to use: the owner pastes the block under "The prompt" into Freddie's chat. Peter does not
   send it or install it.
 - Source: the owner's request and ChatGPT's text (pasted 2026-11-13), the owner's two additions
